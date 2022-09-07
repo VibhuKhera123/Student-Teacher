@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:hackthon/My_pages/pages.dart';
 
 class NewProfile extends StatefulWidget {
@@ -14,7 +13,7 @@ class _NewProfileState extends State<NewProfile> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Profile Page"),
+        title: const Text("Profile Page"),
       ),
       body: SingleChildScrollView(
         child: Align(
