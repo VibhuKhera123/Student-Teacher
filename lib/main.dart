@@ -27,12 +27,12 @@ class Studyfree extends StatelessWidget {
       ),
       initialRoute: "/home",
       routes: {
-        MyPages.homepage: ((context) => HomePage()),
-        MyPages.loginpage: (context) => LoginPage(),
-        MyPages.SignUp: (context) => SignUp(),
-        MyPages.NewProfile: (context) => NewProfile(),
-        MyPages.HomeLogin: (context) => LoginHome(),
-        MyPages.LoginTeacher: (context) => LoginTeacher(),
+        MyPages.homepage: ((context) => const HomePage()),
+        MyPages.loginpage: (context) => const LoginPage(),
+        MyPages.signUp: (context) => const SignUp(),
+        MyPages.newprofile: (context) => const NewProfile(),
+        MyPages.homelogin: (context) => const LoginHome(),
+        MyPages.loginteacher: (context) => const LoginTeacher(),
       },
     );
   }

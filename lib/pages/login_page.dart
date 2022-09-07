@@ -75,7 +75,7 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                           ElevatedButton(
                             onPressed: () {
-                              Navigator.pushNamed(context, MyPages.HomeLogin);
+                              Navigator.pushNamed(context, MyPages.homelogin);
                             },
                             child: Text("login"),
                             style: TextButton.styleFrom(

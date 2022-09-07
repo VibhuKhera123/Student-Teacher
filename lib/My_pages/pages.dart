@@ -1,8 +1,8 @@
 class MyPages {
   static String loginpage = "/login";
   static String homepage = "/home";
-  static String SignUp = "/signup";
-  static String NewProfile = "/profile";
-  static String HomeLogin = "/lh";
-  static String LoginTeacher = "/lt";
+  static String signUp = "/signup";
+  static String newprofile = "/profile";
+  static String homelogin = "/lh";
+  static String loginteacher = "/lt";
 }

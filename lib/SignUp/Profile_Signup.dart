@@ -16,79 +16,87 @@ class _NewProfileState extends State<NewProfile> {
       appBar: AppBar(
         title: Text("Profile Page"),
       ),
-      body: Align(
-        alignment: Alignment.center,
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-          child: Column(children: [
-            TextFormField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: "Enter Full Name",
-                labelText: "Full Name",
-              ),
-            ),
-            SizedBox(height: 20),
-            TextFormField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: ("Enter Mobile Number"),
-                labelText: ("Mobile Number"),
-              ),
-            ),
-            SizedBox(height: 20),
-            TextFormField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: "Enter State",
-                labelText: "State",
-              ),
-            ),
-            SizedBox(height: 20),
-            TextFormField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: "Enter Address",
-                labelText: "Address",
-              ),
-            ),
-            SizedBox(height: 20),
-            TextFormField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: "Enter Address",
-                labelText: "Address",
-              ),
-            ),
-            SizedBox(height: 20),
-            TextFormField(
-              decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: "Enter Email",
-                labelText: "Email",
-              ),
-            ),
-            SizedBox(height: 20),
-            Row(
-              children: [
-                ElevatedButton(
-                  child: Text("SignUp as Teacher"),
-                  onPressed: () {
-                    Navigator.pushNamed(context, MyPages.LoginTeacher);
-                  },
+      body: SingleChildScrollView(
+        child: Align(
+          alignment: Alignment.center,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
+            child: Column(children: [
+              TextFormField(
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: "Enter Full Name",
+                  labelText: "Full Name",
                 ),
-                SizedBox(
-                  width: 80,
+              ),
+              const SizedBox(height: 20),
+              TextFormField(
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: ("Enter Mobile Number"),
+                  labelText: ("Mobile Number"),
                 ),
-                ElevatedButton(
-                  child: Text("SignUp as Student"),
-                  onPressed: () {
-                    Navigator.pushNamed(context, MyPages.HomeLogin);
-                  },
+              ),
+              SizedBox(height: 20),
+              TextFormField(
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: "Enter State",
+                  labelText: "State",
                 ),
-              ],
-            ),
-          ]),
+              ),
+              SizedBox(height: 20),
+              TextFormField(
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: "Enter Address",
+                  labelText: "Address",
+                ),
+              ),
+              SizedBox(height: 20),
+              TextFormField(
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: "Enter Address",
+                  labelText: "Address",
+                ),
+              ),
+              const SizedBox(height: 20),
+              TextFormField(
+                decoration: const InputDecoration(
+                  border: OutlineInputBorder(),
+                  hintText: "Enter Email",
+                  labelText: "Email",
+                ),
+              ),
+              const SizedBox(height: 20),
+              Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: ElevatedButton(
+                      child: const Text("SignUp as Teacher"),
+                      onPressed: () {
+                        Navigator.pushNamed(context, MyPages.loginteacher);
+                      },
+                    ),
+                  ),
+                  const SizedBox(
+                    width: 20,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(2.0),
+                    child: ElevatedButton(
+                      child: const Text("SignUp as Student"),
+                      onPressed: () {
+                        Navigator.pushNamed(context, MyPages.homelogin);
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ]),
+          ),
         ),
       ),
     );

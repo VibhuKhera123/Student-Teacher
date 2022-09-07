@@ -102,13 +102,13 @@ class _SignUpState extends State<SignUp> {
                             Duration(milliseconds: 300),
                           );
                           await Navigator.pushNamed(
-                              context, MyPages.NewProfile);
+                              context, MyPages.newprofile);
                           setState(() {
                             changebutton = false;
                           });
                         },
                         child: AnimatedContainer(
-                            duration: Duration(milliseconds: 100),
+                            duration: Duration(milliseconds: 80),
                             height: 40,
                             width: changebutton ? 60 : 160,
                             alignment: Alignment.center,

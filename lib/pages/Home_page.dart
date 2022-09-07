@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     ElevatedButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, MyPages.SignUp);
+                        Navigator.pushNamed(context, MyPages.signUp);
                       },
                       child: Text("Click To SignUp"),
                       style: TextButton.styleFrom(minimumSize: Size(160, 80)),
