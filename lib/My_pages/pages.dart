@@ -5,4 +5,5 @@ class MyPages {
   static String newprofile = "/profile";
   static String homelogin = "/lh";
   static String loginteacher = "/lt";
+  static String splash = "/splash";
 }

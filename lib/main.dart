@@ -9,6 +9,7 @@ import 'package:hackthon/pages/login_page.dart';
 //import 'package:google_fonts/google_fonts.dart';
 
 import 'package:hackthon/pages/logint.dart';
+import 'package:hackthon/pages/splash.dart';
 
 void main() {
   runApp(const Studyfree());
@@ -25,8 +26,9 @@ class Studyfree extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
-      initialRoute: "/home",
+      initialRoute: "/splash",
       routes: {
+        MyPages.splash: (context) => const Splash(),
         MyPages.homepage: ((context) => const HomePage()),
         MyPages.loginpage: (context) => const LoginPage(),
         MyPages.signUp: (context) => const SignUp(),
