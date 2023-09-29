@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "847629495820",
+    "project_id": "liveprog",
+    "storage_bucket": "liveprog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847629495820:android:01335ac5807d6180ac8829",
+        "android_client_info": {
+          "package_name": "com.example.student_teacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847629495820-qgqsfvi89njf3mamkq87psa2rfftlfpb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnGHnyk3trQXuHr0blBg1BqjPySr3mfnU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847629495820-qgqsfvi89njf3mamkq87psa2rfftlfpb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
