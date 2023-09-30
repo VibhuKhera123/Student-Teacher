@@ -39,20 +39,19 @@ class _SignUpState extends State<SignUp> {
     return Scaffold(
         body: Stack(
       children: [
-        SingleChildScrollView(
-          child: Container(
-            height: MediaQuery.of(context).size.height,
-            width: MediaQuery.of(context).size.width,
-            decoration: const BoxDecoration(
-              gradient: SweepGradient(
-                colors: [
-                  Color.fromARGB(255, 251, 167, 103),
-                  Color.fromARGB(255, 244, 128, 3),
-                  Color.fromARGB(255, 251, 167, 103),
-                  Color.fromARGB(255, 244, 128, 3),
-                ],
-              ),
-            ),
+        Container(
+          height: MediaQuery.of(context).size.height,
+          width: MediaQuery.of(context).size.width,
+          decoration: BoxDecoration(
+            color: Colors.amber[100]
+            // gradient: SweepGradient(
+            //   colors: [
+            //     Color.fromARGB(255, 41, 247, 229),
+            //     Color.fromARGB(255, 3, 244, 196),
+            //     Color.fromARGB(255, 103, 216, 251),
+            //     Color.fromARGB(255, 3, 152, 244),
+            //   ],
+            // ),
           ),
         ),
         Center(

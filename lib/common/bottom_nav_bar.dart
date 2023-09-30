@@ -23,12 +23,13 @@ class _HomeState extends State<Home> with TickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
+    var h = MediaQuery.of(context).size.height;
     return Scaffold(
       extendBody: true,
       body:
           _buildBodyForSelectedTab(), // Use a method to build the body based on the selected tab
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.only(bottom: 10),
+        padding: EdgeInsets.only(bottom: h * 0.005),
         child: DotNavigationBar(
           margin: const EdgeInsets.only(
             left: 10,
